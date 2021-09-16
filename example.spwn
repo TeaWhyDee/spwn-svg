@@ -1,0 +1,10 @@
+extract import static_draw
+
+a = import "resources/res_lines.spwn"
+w = 0.25 // WIDTH OF LINES
+
+for i in 0..a.length {
+    for j in 0..a[i].length {
+        draw_line(a[i][j][0],a[i][j][1],a[i][j][2],a[i][j][3],width=w)
+    }
+}
